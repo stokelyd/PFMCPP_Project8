@@ -140,26 +140,17 @@ int main()
     //be careful to not accidentally make element copies when iterating.
     for( auto& c : cars )
     {
-        if( auto* v = dynamic_cast<Vehicle*>(&c) )
-        {
-            highway.addVehicle(v);
-        }
+        highway.addVehicle(&c);
     }
 
     for( auto& m : motorcycles )
     {
-        if( auto* v = dynamic_cast<Vehicle*>(&m) )
-        {
-            highway.addVehicle(v);
-        }
+        highway.addVehicle(&m);
     }
 
     for( auto& st : trucks )
     {
-        if( auto* v = dynamic_cast<Vehicle*>(&st) )
-        {
-            highway.addVehicle(v);
-        }
+        highway.addVehicle(&st);
     }
     
     HighwayPatrol cop;

@@ -11,5 +11,4 @@ struct SemiTruck : public Vehicle
 
     void honkHorn();
     void pullOver();
-    void tryToEvade() override;
 };

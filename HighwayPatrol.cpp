@@ -52,5 +52,3 @@ void HighwayPatrol::pullOver( Vehicle* v, bool willArrest, Highway* h )
         h->removeVehicle(v);
     }
 }
-
-void HighwayPatrol::tryToEvade() { }
