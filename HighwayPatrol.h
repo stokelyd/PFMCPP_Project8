@@ -3,7 +3,7 @@
 #include "Vehicle.h"
 
 struct Highway;
-struct HighwayPatrol : Vehicle 
+struct HighwayPatrol : public Vehicle 
 {
     HighwayPatrol();
     void scanHighway(Highway* h);
