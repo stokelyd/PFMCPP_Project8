@@ -10,8 +10,10 @@ struct SemiTruck : public Vehicle
 
     // ~SemiTruck() override { }
     // ~SemiTruck() = default;
-    // SemiTruck(const SemiTruck&) = default
+    SemiTruck(const SemiTruck&) = default;
+    SemiTruck& operator=(const SemiTruck&) = default;
 
     void honkHorn();
+    void pullOver();
     void tryToEvade() override;
 };
