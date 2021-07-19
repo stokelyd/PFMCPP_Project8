@@ -2,6 +2,12 @@
 
 SemiTruck::SemiTruck(const std::string& n) : Vehicle(n) { }
 
+void SemiTruck::honkHorn()
+{
+    setSpeed(65);
+    std::cout << name << ": honking the horn." << std::endl;
+}
+
 void SemiTruck::tryToEvade()
 {
     setSpeed(0);

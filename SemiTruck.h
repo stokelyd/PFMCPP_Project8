@@ -12,5 +12,6 @@ struct SemiTruck : public Vehicle
     // ~SemiTruck() = default;
     // SemiTruck(const SemiTruck&) = default
 
+    void honkHorn();
     void tryToEvade() override;
 };
