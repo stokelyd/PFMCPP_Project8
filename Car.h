@@ -6,8 +6,9 @@ struct Car : Vehicle
 {
     Car(const std::string& s);
 
-    Car(const Car&) = default;
-    Car& operator=(const Car&) = default;
+    ~Car() override;
+    Car(const Car&);
+    Car& operator=(const Car&);
 
     void closeWindows();
 

@@ -2,12 +2,13 @@
 
 #include "Vehicle.h"
 
-struct SemiTruck : public Vehicle
+struct SemiTruck : Vehicle
 {
     SemiTruck(const std::string& n);
 
-    SemiTruck(const SemiTruck&) = default;
-    SemiTruck& operator=(const SemiTruck&) = default;
+    ~SemiTruck() override;
+    SemiTruck(const SemiTruck&);
+    SemiTruck& operator=(const SemiTruck&);
 
     void honkHorn();
     void pullOver();
